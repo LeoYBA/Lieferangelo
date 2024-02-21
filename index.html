@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferangelo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="script.js"></script>
+    
+</head>
+
+<body onload="show()" onload="addButton()">
+    <div class="page-container">
+        <div class="contentWrap"> <!------------------- Container für die gesamte Webseite ------------------------>
+
+            <!------------------- Start - Header ------------------------>
+        <div class="header-menu-container">
+            <div><image class="headermenu-logo" src="./lieferangelo-logo.png" alt="logo"></div>
+            <div id="FoodCardHeader"><p class="headermenu-adress">Speisekarte</p></div>
+            <div>
+                <image id="germanFlag" class="headermenu-flag" src="./german.png" alt="flag"></image>
+                <image class="headermenu-burgericon" src="./burgermenu.png" alt="burgermenu">
+            </div>
+        </div>
+            <!------------------- Ende - Header ------------------------>
+
+            <!------------------- Start - contentsection - Warenkorb & Speisekarte ------------------------>
+
+                <!------------------- Start - contentsection - restaurantprofil ------------------------>
+
+        <div class="maincontainer-foodbaskedandfoodcard">
+
+            <div>
+                
+                    <div><image class="contentsection-pizza-image" src="./pizza.jpg" alt="pizza"></div>
+                
+                <div class="container-pizzalogo">
+                    <div><image class="contentsection-pizzalogo" src="./pizza-logo2.png" alt="logo"></div>
+                </div>
+                
+                    <div class="contentsection-restaurantdetails">
+                        <div>
+                            <p class="headline-restaurant">Borcelle Restaurant</p>
+                                 <div class="contentsection-restaurantandstars">
+                                    <image class="borcelle-restaurant-stars" src="./starts.png" alt="stars"></image>
+                                     <p class="restaurant-testomonials">(52 Bewertungen)</p>
+                                </div>
+                                <div class="termsofdelivery-container">
+                                    <image class="termsofdelivery-basket" src="./shopping-basket-blue.png" alt="shopping-Basket"></image>
+                                    <p class="termsofdelivery-basket-minprice">Min. 10€</p>
+                                    <p class="termsofdelivery-borderpoint">•</p>
+                                    <image class="termsofdelivery-bike" src="./bike-icon.png" alt="bike-icon"></image>
+                                    <p class="termsofdelivery-deliveryprice">5€</p>
+                                </div>
+                        </div>
+                    
+                            <div class="contentsection-both-detailicons">
+                                <image class="contentsection-detailicon-info" src="./info-icon.png" alt="stars"></image>
+                                <image class="contentsection-detailicon-heart" src="./heart.png" alt="stars"></image>
+                            </div>
+
+                        </div>
+
+                <!------------------- Start - contentsection - restaurantprofil ------------------------>
+                
+                <!------------------- Start - contentsection - Suchleiste ------------------------>
+                
+                <div class="container-searchbar">
+                    <div class="container-searchbar-text"><image class="contentsection-searchicon" src="./search.png" alt="serach-icon"></image></div>
+                    <div class="container-searchbar-text-extra"><p>Beliebte Gerichte</p></div>
+                    <div id="removeWhenMobile" class="container-searchbar-text-element"><p>Pizza</p></div>
+                    <div id="removeWhenMobile" class="container-searchbar-text-element"><p>Pizzabrot</p></div>
+                    <div id="removeWhenMobile" class="container-searchbar-text-element"> <p>Vegane Pizza</p></div>
+                </div>
+            
+                <!------------------- Ende - contentsection - Suchleiste ------------------------>
+
+                <!------------------- Start - contentsection - nur Speisekarte ------------------------>
+
+                <!----- Produkt 1 ------>
+
+                <div>
+
+                    <div class="contentsection-headline-foodcard-container">
+                        <p class="contentsection-headline-foodcard">Beliebte Gerichte</p>
+                    </div>
+
+                    <div class="foodcard-ordercontainer">
+                        <image class="food-card-productimages" src="./pizza-salami.jpg"></image>
+                            <div class="foc-productandorderbutton">
+                                <div class="foc-producttextandinfo">
+                                    <p class="foc-produktheadline-text">Pizza Salami</p>
+                                    <p class="foc-produktinfo-text">Produktinfos</p>
+                                </div>
+                                    <div>
+                                        <image onclick="addToBasked('Salami Pizza',12.60, 1)" class="contentsection-addbutton" src="./plus.png" alt="plus-icon"></image></div>
+                                    </div>
+                                <p class="foc-fooddescribtion">mit 60g italienischer Salami und originalem Schweizer Alpenkäse</p>
+                            <p class="foc-foodprice">12,60€</p>
+                        </div>
+            
+                </div>
+
+                         <!----- Produkt 2 ------>
+
+                <div>
+
+                    <div class="foodcard-ordercontainer">
+                        <image class="food-card-productimages" src="./pizza-magarita.jpg"></image>
+                            <div class="foc-productandorderbutton">
+                                <div class="foc-producttextandinfo">
+                                    <p class="foc-produktheadline-text">Pizza Magarita</p>
+                                    <p class="foc-produktinfo-text">Produktinfos</p>
+                                </div>
+                                    <div>
+                                        <image onclick="addToBasked('Pizza Magarita',10.60, 1)" class="contentsection-addbutton" src="./plus.png" alt="plus-icon"></image></div>
+                                    </div>
+                                <p class="foc-fooddescribtion">mit regionales Tomaten und originalem Schweizer Alpenkäse</p>
+                            <p class="foc-foodprice">10,60€</p>
+                        </div>
+            
+                </div>
+
+                         <!----- Produkt 3 ------>
+
+                <div>
+
+                    <div class="foodcard-ordercontainer">
+                        <image class="food-card-productimages" src="./pizza-hawaii.jpg"></image>
+                            <div class="foc-productandorderbutton">
+                                <div class="foc-producttextandinfo">
+                                    <p class="foc-produktheadline-text">Pizza Hawaii</p>
+                                    <p class="foc-produktinfo-text">Produktinfos</p>
+                                </div>
+                                    <div>
+                                        <image onclick="addToBasked('Salami Hawaii',11.60, 1)" class="contentsection-addbutton" src="./plus.png" alt="plus-icon"></image></div>
+                                    </div>
+                                <p class="foc-fooddescribtion">mit frischer Bio-Anans und originalem Schweizer Alpenkäse</p>
+                            <p class="foc-foodprice">11,60€</p>
+                        </div>
+            
+
+                        
+                </div>
+
+
+
+                <!------------------- Ende - contentsection - nur Speisekarte ------------------------>
+
+                
+                <!------------------- Start - contentsection - Warenkorb ------------------------>
+
+            </div>
+
+ 
+
+
+            <div id="foodBasketMainContainer" class="food-basked-container">
+                <p class="headline-foodbasked">Warenkorb</p>
+                    
+                    <div id="foodbaskedEmptybasked" class="foodbasked-emptybasked-container">
+                        <image class="foodbasked-icon" src="./shop-icon.png" alt="plus-icon"></image>
+                        <p class="foodbasked-emtybasked-text">Wähle eines der leckeren Gerichte aus und starte deine Bestellung</p>
+                    </div>
+
+
+                    <div>
+                        <div id="shoppingCheckoutPrices"></div>
+                        <div class="checkout-finalfoodprice"><p class="checkout-price-summarized">Lieferkosten:</p><p id="sum" class="checkout-price-summarized">0,00€</p></div>
+                        <div class="checkout-finalfoodprice"><p class="checkout-price-summarized">Gesamt:</p><p id="finalSum" class="checkout-price-summarized">0,00€</p></div>
+                    </div>
+                        <div id="CheckoutMinpriceText" class="checkout-minprice-text"><p class="checkout-emptybasket-fontdesign">Leider können Sie erst ab einem mindestbestellwert von 10€ Ihre Bestellung abschliessen. Fügen Sie noch etwas hinzu um fortzufahren. Vielen Dank.</p></div>
+                       
+
+                        <div id="CheckoutButton"><button class="checkout-button">Jetzt bestellen</button></div>
+                    
+                        
+                        <div id="checkoutButtonFull">
+                            <button class="checkout-button-full" onclick="window.open('http://127.0.0.1:5500/Lieferando%20-%20Kopie/dankesseite.html', '_self');">Jetzt bestellen</button>
+                        </div>
+                    
+                                    
+
+            </div>
+            
+            
+            
+            
+                                  
+            
+            
+                                <div id="foodbaskedEmptybasked">
+                <!-- Your content here -->
+            </div>
+
+            <div ><button onclick="showElement()" class="button-basket-below-1050px">Warenborb</button></div>
+           
+           
+
+           
+           
+           
+           
+           
+            <!------------------- Start - contentsection - Warenkorb ------------------------>
+            
+            <!------------------- Ende - contentsection - restaurantprofil ------------------------>
+
+
+
+        </div>
+    
+
+    </div>
+ <!------------------- Start - Footer ------------------------>
+
+ <div class="footer-container">
+    <div class="footer-text-container">
+        <p class="footer-text">Impressum</p>
+        <p class="footer-text">Datenschutz</p>
+        <p class="footer-text">AGBs</p>
+    <div>
+</div>
+
+<!------------------- Ende - Footer ------------------------>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+</body>
+</html>

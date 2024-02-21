@@ -1,0 +1,550 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.contentWrap {
+    padding-bottom: 0px;
+}
+
+/*------------------------------------ Start - Header --------------------------------*/
+
+.header-menu-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ff7f01;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.headermenu-logo {
+    width: 150px;
+}
+
+.headermenu-adress {
+    color: white;
+    text-decoration: underline;
+}
+
+.headermenu-flag {
+    width: 32px;
+    margin-right: 24px;
+}
+
+.headermenu-burgericon {
+    width: 32px;
+}
+
+/*------------------------------------ Ende - Header --------------------------------*/
+
+/*------------------------------------ Start - contentsection - Warenkorb & Speisekarte --------------------------------*/
+
+.maincontainer-foodbaskedandfoodcard {
+    display: flex;
+}
+
+.contentsection-pizza-image {
+    width: 70vw;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.contentsection-pizzalogo {
+    width: 120px;
+    border-radius: 50%;
+    margin-left: 40vw;
+    position: relative;
+    transform: translateY(-50%);
+    margin-bottom: 0px;
+
+}
+
+.container-pizzalogo {
+height: 10px;
+}
+
+.contentsection-restaurantdetails {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.headline-restaurant {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 600;
+    color: #23404f;
+}
+
+.contentsection-restaurantandstars {
+    display: flex;
+}
+
+.borcelle-restaurant-stars {
+    width: 110px;
+    height:fit-content;
+    object-fit:fill;
+    margin-right: 12px;
+}
+
+.restaurant-testomonials {
+    color: #23404f;
+    margin: 0;
+}
+
+.contentsection-detailicon-info {
+    width: 32px;
+    margin-right: 8px;
+    background-color: #f7f6f4;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.contentsection-detailicon-heart {
+    width: 32px;
+    background-color: #f7f6f4;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.termsofdelivery-container {
+    display: flex;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.termsofdelivery-basket {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.termsofdelivery-bike {
+    width: 24px;
+    height:24px;
+    object-fit: cover;
+}
+
+.termsofdelivery-basket-minprice {
+    color: #23404f;
+    margin-top: 0;
+}
+
+.termsofdelivery-borderpoint {
+    color: #23404f;
+    margin-top: 0;
+}
+
+.termsofdelivery-deliveryprice {
+    color: #23404f;
+    margin-top: 0;
+}
+
+.contentsection-both-detailicons {
+    display: flex;
+    align-items: center;
+}
+
+.container-searchbar {
+    display: flex;
+    background-color: #f7f6f4;
+    align-items: center;    
+    margin-bottom: 32px;
+}
+
+.contentsection-searchicon {
+    width: 30px;
+    height: 30px;
+    object-fit:fill;
+    margin-right: 16px;
+    margin-left: 20px;
+}
+
+.container-searchbar-text {
+    margin-right: 6px;
+    color: #23404f;
+}
+
+.container-searchbar-text-element {
+    margin-right: 20px;
+    color: #23404f;
+}
+
+.container-searchbar-text-extra {
+    margin-right: 24px;
+    color: #ff7f01;
+}
+
+.contentsection-headline-foodcard-container {
+    background-color: #f7f6f4;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.contentsection-headline-foodcard {
+    font-size: 20px;
+    font-weight: 600;
+    color: #23404f;
+    padding: 12px;
+    margin-left: 12px;
+    margin-bottom: 24px;
+}
+
+.foodcard-ordercontainer {
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid rgb(172, 169, 169);
+    padding: 14px;
+    margin-bottom: 24px;
+    border-radius: 10px;
+}
+
+.foodcard-ordercontainer:hover {
+    background-color: #eff7fb;
+}
+
+.food-card-productimages {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: brightness(90%);
+}
+
+.foc-productandorderbutton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foc-producttextandinfo {
+    display: flex;
+    align-items: center;
+}
+
+.foc-produktheadline-text {
+    margin-right: 12px;
+    font-weight: 500;
+}
+
+.foc-produktinfo-text {
+    font-size: 12px;
+    color: #517ec8;
+}
+
+.contentsection-addbutton {
+    width: 32px;
+    transition: transform .7s ease-in-out;
+}
+
+.contentsection-addbutton:hover {
+    transform: rotate(-180deg);
+    cursor: pointer;
+}
+
+.foc-fooddescribtion {
+    font-weight: 300;
+    margin-top: 0;
+}
+
+.foc-foodprice {
+    color:#ff7f01;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+/*------------------------------------ Ende - Speisekarte --------------------------------*/
+
+/*------------------------------------ Start - Warenkorb --------------------------------*/
+
+.food-basked-container {
+    position: sticky;
+    top: 0;
+    bottom: 0px;
+    right: 0;
+    padding:24px;
+    
+    width: 30vw;
+    height: 100vh;
+    margin-left: 71%;
+    background-color: rgb(255, 255, 255);
+   /* margin-top: 81px;*/
+   box-shadow: -4px 0px 8px -2px rgba(0, 0, 0, 0.15);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+
+.headline-foodbasked {
+    text-align: center;
+    font-weight: 600;
+    color: #23404f;
+    font-size: 24px;
+}
+
+.foodbasked-emptybasked-container {
+
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 12px;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.foodbasked-icon {
+    width: 48px;
+}
+
+.foodbasked-emtybasked-text {
+    color: #bfbebf;
+    text-align: center;
+}
+
+.checkout-foodpricelist {
+    display: flex;
+    border-top: 1px  solid rgb(172, 169, 169);
+    width: 25vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkout-foodpricelist-fontdesign {
+    color:#bfbebf;
+}
+
+.checkout-emptybasket-fontdesign {
+    color:#bfbebf;
+    margin-bottom: 0;
+    margin-top: 32px;
+}
+
+.checkout-finalfoodprice {
+    display: flex;
+    border-bottom: 1px  solid rgb(172, 169, 169);
+    width: 25vw;
+    justify-content: space-between;
+}
+
+.checkout-price-summarized {
+    color: #23404f;
+    font-weight: 500;
+}
+
+.checkout-minprice-text {
+   text-align: center;
+   padding-left: 30px;
+   padding-right: 30px;
+}
+
+.checkout-button {
+    background-color: #bfbebf;
+    border: none;
+    border-radius: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: white;
+    font-size: 700;
+    margin-top: 32px;
+    cursor: pointer;
+}
+
+.checkout-button-full {
+    background-color: #ff7f01;
+    border: none;
+    border-radius: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: white;
+    font-size: 700;
+    margin-top: 32px;
+    cursor: pointer;
+}
+
+.checkout-foodpriceicons-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 6px;
+}
+
+.checkout-foodpricelist-plusandminus {
+    width: 18px;
+    background-color: #f7f6f4;
+    border-radius: 50%;
+    padding: 8px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.checkout-foodpricelist-amount {
+    color: #23404f;
+}
+
+/*------------------------------------ Start - footer --------------------------------*/
+
+.footer-container {
+    background-color: #23404f;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thankyou-maincontainer {
+    text-align: center;
+}
+
+.thankyou-image-dog {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    filter: brightness(80%);
+}
+
+.thankyou-text {
+    color:#23404f;
+}
+
+.thankyou-button {
+    background-color: #ff7f01;
+    border-style: none;
+    color: white;
+    border-radius: 10px;
+    padding: 12px 24px 12px 24px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+
+.footer-text-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-text {
+    color: white;
+    margin: 0;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.footer-text:hover {
+    color: #ff7f01;
+    cursor: pointer;
+}
+
+/*------------------------------------ Ende - footer --------------------------------*/
+
+/*------------------------------------ Start - Mobile --------------------------------*/
+
+
+@media screen and (min-width: 1050px) {
+        .button-basket-below-1050px {
+            display: none;
+        }
+    }
+    
+
+    .button-basket-below-1050px {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    @media screen and (max-width: 1050px) {
+        .maincontainer-foodbaskedandfoodcard {
+          display: block;
+        }
+
+        .contentsection-pizza-image {
+            width: 100vw;
+            height: 200px;
+            object-fit: cover;
+        }
+      }
+
+
+    @media screen and (max-width: 910px) {
+      .contentsection-pizzalogo {
+        width: 120px;
+        border-radius: 50%;
+        margin-left: 0vw;
+        position: relative;
+        transform: translateY(-90%);
+        margin-bottom: 0px;
+    }
+}
+
+
+@media screen and (max-width: 530px) {
+    #removeWhenMobile {
+      display: none;
+    }
+  }
+
+
+  @media screen and (max-width: 560px) {
+    .contentsection-both-detailicons {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contentsection-detailicon-info {
+        margin-right: 0px;
+        margin-bottom: 6px;
+    }
+  }
+
+
+  @media screen and (max-width: 450px) {
+    #germanFlag {
+      display: none;
+    }
+
+    .contentsection-both-detailicons {
+        display: flex;
+        align-items: center;
+        margin-left: 12px;
+    }
+  }
+
+
+  @media screen and (max-width: 390px) {
+    #FoodCardHeader {
+      display: none;
+    }
+
+    .contentsection-restaurantandstars {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+  /*------------------------------------ Start - Mobile --------------------------------*/
